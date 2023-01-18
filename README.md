@@ -8,20 +8,6 @@
 
 > We propose a novel method to machine-learn highly detailed, nonlinear contact deformations for real-time dynamic simulation. We depart from previous deformation-learning strategies, and model contact deformations in a contact-centric manner. This strategy shows excellent generalization with respect to the object's configuration space, and it allows for simple and accurate learning. We complement the contact-centric learning strategy with two additional key ingredients: learning a continuous vector field of contact deformations, instead of a discrete approximation; and sparsifying the mapping between the contact configuration and contact deformations. These two ingredients further contribute to the accuracy, efficiency, and generalization of the method. We integrate our learning-based contact deformation model with subspace dynamics, showing real-time dynamic simulations with fine contact deformation detail.
 
-**Project structure**:
-```
-contact-centric-deformation-learning
-│
-└───assets 
-|    └─ images
-|    └─ textures
-|
-└───data 
-     └─ meshes.h5              # Mesh data (external download)
-     └─ dataset.h5             # Learning data (external download)
- 
-```
-
 **Requirements**: ```python3```, ```h5py``` ```numpy```
 
 # Meshes
@@ -44,14 +30,3 @@ contact-centric-deformation-learning
 | *q*    | Handle transformations        | [num_samples, num_handle_rows, dim]  |
 | *z*    | Collider transformation       | [num_samples, dim+1, dim]            |
 | *x*    | Simulated node positions      | [num_samples, num_jelly_nodes, dim]  |
-
-```
-@article {romero2021subspacelearning,
-    author  = {Romero, Cristian and Casas, Dan and Pérez, Jesús and Otaduy, Miguel A.},
-    title   = {{Learning Contact Corrections for Handle-Based Subspace Dynamics}},
-    number  = "4",
-    volume  = "40",
-    journal = {ACM Transactions on Graphics (Proc. of ACM SIGGRAPH)},
-    year    = {2021}
-}
-```
