@@ -12,18 +12,21 @@
 
 # Meshes
 
+[meshes.h5](https://urjc-my.sharepoint.com/:u:/g/personal/cristian_romero_urjc_es/EUHKu3461yNEjE9-j7yA5xsBSz8Uyd6KlctZL0vZbzQUdw?e=71f3dI)
+
 | Key          | Key      | Description                        | Dimension                           |
 |--------------|----------|------------------------------------|-------------------------------------|
 |  *jelly*     | *W*      | Linear basis (BGBC)                | [num_jelly_nodes, num_handle_rows]  |
 |              | *q_ref*  | Reference transformations          | [num_handle_rows, dim]              |
-|              | *tris*   | Triangle indices                   | [num_jelly_tris, dim+1]             |
-|              | *uv_coords* | uv texture coordinates          | [num_jelly_nodes, dim]              |
-|              | *uv_indices*  | uv indices per triangle       | [num_jelly_tris, dim+1]             |
+|              | *tris*   | Triangle indices                   | [num_jelly_tris, dim]               |
+|              | *tets    | Tetrahedron indices                | [num_jelly_tets, dim]               |
 |  *star*      | *W*      | Linear basis (rigid)               | [num_star_nodes, dim+1]             |
 |              | *z_ref*  | Reference transformation           | [dim+1, dim]                        |
-|              | *tris*   | Triangle indices                   | [num_star_tris, dim+1]              |
+|              | *tris*   | Triangle indices                   | [num_star_tris, dim]                |
 
 # Dataset
+
+[dataset.h5](https://urjc-my.sharepoint.com/:u:/g/personal/cristian_romero_urjc_es/ETSvhdReOF5JkKTlK476hwkBmUFQm24-CEziQjrCan7qtg?e=rSOyTA)
 
 | Key    | Description                   | Dimension                            |
 |--------|-------------------------------|--------------------------------------|
