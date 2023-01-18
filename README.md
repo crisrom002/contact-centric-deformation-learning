@@ -33,3 +33,16 @@
 | *q*    | Handle transformations        | [num_samples, num_handle_rows, dim]  |
 | *z*    | Collider transformation       | [num_samples, dim+1, dim]            |
 | *x*    | Simulated node positions      | [num_samples, num_jelly_nodes, dim]  |
+
+# Citation
+
+```
+@article {romero2022contactcentriclearning,
+    author  = {Romero, Cristian and Casas, Dan and Chiaramonte, Maurizio M. and Otaduy, Miguel A.},
+    title   = {{Contact-Centric Deformation Learning}},
+    number  = "4",
+    volume  = "41",
+    journal = {ACM Transactions on Graphics (Proc. of ACM SIGGRAPH)},
+    year    = {2022}
+}
+```
